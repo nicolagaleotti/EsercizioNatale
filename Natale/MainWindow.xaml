@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Natale"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="450" Width="542">
+    <Grid Background="Black">
+        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Lista:" HorizontalAlignment="Left" Margin="56,43,0,0" VerticalAlignment="Top" Width="163" Height="45" FontWeight="Bold" FontSize="18" Foreground="#FFFFC4C4"/>
+        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Voto più alto:" HorizontalAlignment="Left" Margin="307,176,0,0" VerticalAlignment="Top" Width="163" Height="45" FontSize="18" FontWeight="Bold" Foreground="#FFFFC4C4"/>
+        <TextBox Name="txtAlto" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="49" Margin="307,221,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" FontSize="18"/>
+        <Button Content="ESTRAI" HorizontalAlignment="Left" Margin="307,43,0,0" VerticalAlignment="Top" Width="163" Height="60" FontSize="20" FontWeight="Bold" Background="#FFFFC4C4" Foreground="Black"/>
+        <ListBox Name="ltbVoti" HorizontalAlignment="Left" Height="241" Margin="56,126,0,0" VerticalAlignment="Top" Width="163" FontSize="18"/>
+
     </Grid>
 </Window>
