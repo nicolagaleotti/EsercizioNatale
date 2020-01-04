@@ -7,11 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="542">
     <Grid Background="Black">
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Lista:" HorizontalAlignment="Left" Margin="56,43,0,0" VerticalAlignment="Top" Width="163" Height="45" FontWeight="Bold" FontSize="18" Foreground="#FFFFC4C4"/>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Voto più alto:" HorizontalAlignment="Left" Margin="307,176,0,0" VerticalAlignment="Top" Width="163" Height="45" FontSize="18" FontWeight="Bold" Foreground="#FFFFC4C4"/>
-        <TextBox Name="txtAlto" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="49" Margin="307,221,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" FontSize="18"/>
-        <Button Content="ESTRAI" HorizontalAlignment="Left" Margin="307,43,0,0" VerticalAlignment="Top" Width="163" Height="60" FontSize="20" FontWeight="Bold" Background="#FFFFC4C4" Foreground="Black"/>
-        <ListBox Name="ltbVoti" HorizontalAlignment="Left" Height="241" Margin="56,126,0,0" VerticalAlignment="Top" Width="163" FontSize="18"/>
+        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Lista:" HorizontalAlignment="Left" Margin="56,126,0,0" VerticalAlignment="Top" Width="163" Height="45" FontWeight="Bold" FontSize="18" Foreground="#FFFFC4C4"/>
+        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Voto più alto:" HorizontalAlignment="Left" Margin="307,268,0,0" VerticalAlignment="Top" Width="163" Height="45" FontSize="18" FontWeight="Bold" Foreground="#FFFFC4C4"/>
+        <TextBox Name="txtAlto" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="49" Margin="307,318,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" FontSize="18"/>
+        <Button Name="btnAggiungi" Content="AGGIUNGI" HorizontalAlignment="Left" Margin="307,176,0,0" VerticalAlignment="Top" Width="163" Height="60" FontSize="20" FontWeight="Bold" Background="#FFFFC4C4" Foreground="Black" Click="BtnAggiungi_Click"/>
+        <ListBox Name="ltbVoti" HorizontalAlignment="Left" Height="191" Margin="56,176,0,0" VerticalAlignment="Top" Width="163" FontSize="18"/>
+        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Nome:" HorizontalAlignment="Left" Margin="56,32,0,0" VerticalAlignment="Top" Width="209" Height="32" FontSize="18" Foreground="#FFFFC4C4" FontWeight="Bold"/>
+        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Voto:" HorizontalAlignment="Left" Margin="270,32,0,0" VerticalAlignment="Top" Width="200" Height="32" FontSize="18" Foreground="#FFFFC4C4" FontWeight="Bold"/>
+        <TextBox Name="txtnome" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="52" Margin="56,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="209"/>
+        <TextBox Name="txtvoto" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="52" Margin="270,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="(massimo 5 persone)" HorizontalAlignment="Left" Margin="307,237,0,0" VerticalAlignment="Top" Width="163" Foreground="#FFFFC4C4"/>
 
     </Grid>
 </Window>

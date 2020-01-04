@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace Natale
 {
@@ -23,6 +24,16 @@ namespace Natale
         public MainWindow()
         {
             InitializeComponent();
+        }
+        int[] voti = new int[5];
+        int i = 0;
+        private void BtnAggiungi_Click(object sender, RoutedEventArgs e)
+        {
+            string nome = txtnome.Text;
+            int voto = int.Parse(txtvoto.Text);
+            voti[i] = voto;
+            //ltbVoti.ItemStringFormat = $"{nome},{voto}";
+            //devo aggiungerli alla listbox
         }
     }
 }
